@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
+
+:root {
+  --font-nunito: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-neutral;
+    font-family: var(--font-nunito);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+  
+  h1 {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  h2 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  h3 {
+    @apply text-xl md:text-2xl;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-glopro text-white px-6 py-3 rounded-button font-medium transition-all duration-200 hover:bg-glopro-dark hover:scale-[1.02] active:scale-[0.98] shadow-sm;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-glopro border-2 border-glopro px-6 py-3 rounded-button font-medium transition-all duration-200 hover:bg-glopro hover:text-white hover:scale-[1.02] active:scale-[0.98];
+  }
+  
+  .btn-tertiary {
+    @apply text-glopro font-medium transition-colors duration-200 hover:text-glopro-dark underline;
+  }
+  
+  .card {
+    @apply bg-white rounded-card shadow-card p-6 transition-shadow duration-200 hover:shadow-card-hover;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-glopro focus:border-transparent transition-all duration-200;
+  }
+  
+  .nav-link {
+    @apply text-neutral-light hover:text-neutral transition-colors duration-200;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
