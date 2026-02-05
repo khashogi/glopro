@@ -9,10 +9,10 @@ export default function HowItWorksPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-neutral mb-6">
-              How Oasis Wash Works
+              How GloPro Works
             </h1>
             <p className="text-xl text-neutral-light">
-              Premium car care delivered to your doorstep. Here's what makes us different.
+              Premium car care. Here's what makes us different.
             </p>
           </div>
         </div>
@@ -293,7 +293,7 @@ export default function HowItWorksPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-neutral mb-4">
-              Why Oasis Wash is Different
+              Why GloPro is Different
             </h2>
             <p className="text-lg text-neutral-light max-w-2xl mx-auto">
               We're not just another car wash - we're reimagining car care for the modern age
